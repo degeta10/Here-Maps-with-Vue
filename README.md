@@ -1,8 +1,10 @@
-# here-maps-sample
+# Here Maps with Vue
 
 ## Project setup
 ```
 npm install
+copy .env.example to .env
+replace VUE_APP_HERE_MAPS_API_KEY with your api key
 ```
 
 ### Compiles and hot-reloads for development
