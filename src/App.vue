@@ -1,19 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HereMap :center="center" :apiKey="apiKey" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HereMap from "./components/HereMap";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HereMap,
+  },
+  data() {
+    return {
+      center: {
+        lat: 40.73061,
+        lng: -73.935242,
+      },
+      apiKey: process.env.VUE_APP_HERE_MAPS_API_KEY,
+      width: "100",
+      height: "100",
+      zoom: "10",
+    };
+  },
+};
 </script>
 
 <style>
