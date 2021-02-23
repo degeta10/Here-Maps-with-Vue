@@ -24,3 +24,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### References
+See [Vuejs Implemention with Here Maps](https://developer.here.com/tutorials/how-to-implement-a-web-map-using-vuejs/).
